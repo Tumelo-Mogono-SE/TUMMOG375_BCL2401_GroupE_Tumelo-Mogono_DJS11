@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import genreMappings from '../genreMapping';
+import "../Styles/showList.css"
 
 function ShowList() {
     const [shows, setShows] = useState([]);
@@ -18,13 +19,27 @@ function ShowList() {
 
     if (loading) {
         return <div>Loading...</div>;
-      }
+    }
     
-      console.log(shows)
 
     return (
-        <>
-        </>
+        <div className='show-list'>
+            <h1>All Shows</h1>
+            <div className='category'>
+                {shows.map(show => (
+                <div className='category-info' key={show.id}>
+                    <Link to={`/show/${show.id}`}>
+                    <div className='img-div'>
+                    <img src={show.image} alt={show.title} />
+                    </div>
+                        <p className='category-name'>{show.title}</p>
+                        <p>Genres: {show.genres.map(genre => genreMappings[genre]).join(', ')}</p>
+                        <p>Seasons: {show.seasons}</p>
+                    </Link>
+                </div>
+                ))}
+            </div>
+        </div>
     )
 }
 
