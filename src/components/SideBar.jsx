@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { MdHomeFilled } from "react-icons/md";
 import { FaHeart } from "react-icons/fa";
 import logo from "../assets/images/podcast.png"
+import "../Styles/sidebar.css"
 
 
 
