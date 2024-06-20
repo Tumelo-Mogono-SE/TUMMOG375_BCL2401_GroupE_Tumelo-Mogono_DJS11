@@ -1,0 +1,28 @@
+
+.sort-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .sort-buttons button {
+    margin: 0 10px;
+    padding: 10px;
+    font-size: 16px;
+    color: #b91da9;
+    background-color: #000;
+    border-radius: 25px;
+    border-width: 2px;
+    border-color: #b91da9;
+    cursor: pointer;
+  }
+
+  .sort-buttons buttton.selected  {
+    color: #000;
+    background-color: #b91da9;
+    border-color: #b91da9;
+    cursor: pointer;
+  }
+
+
+
