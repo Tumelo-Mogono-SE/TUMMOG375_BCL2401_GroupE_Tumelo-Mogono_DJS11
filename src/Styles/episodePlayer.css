@@ -1,0 +1,36 @@
+.episode-player {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    background-color: #000;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.episode-player .episode-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.episode-info img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.episode-player h1 {
+    color: #fff;
+    font-size: 1rem;
+    margin-right: auto;
+}
+
+audio {
+    flex-grow: 1;
+}
