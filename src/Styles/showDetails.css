@@ -39,12 +39,6 @@
     cursor: pointer;
   }
 
-  /* .image-div {
-    width: 200px;
-    height: 200px;
-    margin: 0.5em;
-  } */
-
   .image-div img {
     width: 100%;
   }
