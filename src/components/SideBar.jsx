@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { MdHomeFilled } from "react-icons/md";
 import { FaHeart } from "react-icons/fa";
 import logo from "../assets/images/podcast.png"
-import "../Styles/sidebar.css"
+import "../Styles/sideBar.css"
 
 
 
@@ -15,14 +15,18 @@ function SideBar() {
         <ul>
           <li>
             <Link to="/">
-              <MdHomeFilled/>
-              <span>  </span>
+              <span>
+                <MdHomeFilled/>
+              </span>
               <p>Podcasts</p>
             </Link>
           </li>
           <li>
             <Link to="/favorites">
-              <FaHeart/>  Favorites
+              <span>
+                <FaHeart/>
+              </span>  
+              <p>Favorites</p>
             </Link>
           </li>
         </ul>
