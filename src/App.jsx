@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Header from './components/Header'
 import SideBar from './components/SideBar'
 import ShowList from './components/ShowsList'
+import ShowDetail from './components/ShowDetails'
 import './App.css'
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <div className='main-content'>
             <Routes>
               <Route path="/" exact element={<ShowList />} />
+              <Route path="/show/:id" element={<ShowDetail /> }/>
             </Routes>
           </div>
         </div>
