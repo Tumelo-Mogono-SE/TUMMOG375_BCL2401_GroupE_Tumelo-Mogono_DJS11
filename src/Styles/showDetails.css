@@ -1,6 +1,6 @@
 .show-detail {
     text-align: center;
-  }
+}
   
   .show-info {
     margin-bottom: 20px;
@@ -50,5 +50,14 @@
   .episode p {
     margin: 5px 0;
   }
+
+  .bottom-of-episode {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
   
-  
+  .bottom-of-episode svg {
+    cursor: pointer;
+}
