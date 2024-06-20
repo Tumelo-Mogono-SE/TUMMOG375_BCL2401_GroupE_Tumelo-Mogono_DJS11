@@ -4,6 +4,7 @@ import Header from './components/Header'
 import SideBar from './components/SideBar'
 import ShowList from './components/ShowsList'
 import ShowDetail from './components/ShowDetails'
+import Favourite from './components/Favourite'
 import './App.css'
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
             <Routes>
               <Route path="/" exact element={<ShowList />} />
               <Route path="/show/:id" element={<ShowDetail /> }/>
+              <Route path="/favorites" element={<Favourite />} />
             </Routes>
           </div>
         </div>
