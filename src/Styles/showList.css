@@ -54,39 +54,7 @@
     color: #bfbfbf;
   }
   
-  .show-detail {
-    text-align: center;
-  }
   
-  .show-info {
-    margin-bottom: 20px;
-  }
-  
-  .show-info img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-  }
-  
-  .episodes-list {
-    margin: 20px 0;
-  }
-  
-  .episodes-list ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .episodes-list li {
-    margin: 10px 0;
-  }
-  
-  .episodes-list select {
-    padding: 5px;
-    font-size: 16px;
-  }
   
   .episode-player {
     position: fixed;
