@@ -1,0 +1,37 @@
+.favourites {
+    margin: 20px;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+.episodes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.episode {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+}
+
+.episode .image-div img {
+    width: 100%;
+    height: auto;
+}
+
+.bottom-of-episode {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.bottom-of-episode svg {
+    cursor: pointer;
+}
