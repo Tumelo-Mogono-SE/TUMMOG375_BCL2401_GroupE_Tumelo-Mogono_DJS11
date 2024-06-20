@@ -1,0 +1,60 @@
+.show-detail {
+    text-align: center;
+  }
+  
+  .show-info {
+    margin-bottom: 20px;
+  }
+  
+  .show-info img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .episodes-list {
+    margin: 20px 0;
+  }
+  
+  .episodes-list select {
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  .episodes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px
+  }
+  
+  .episode {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    width: 250px;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  /* .image-div {
+    width: 200px;
+    height: 200px;
+    margin: 0.5em;
+  } */
+
+  .image-div img {
+    width: 100%;
+  }
+
+  .episode h3 {
+    margin: 10px 0 5px;
+  }
+  
+  .episode p {
+    margin: 5px 0;
+  }
+  
+  
