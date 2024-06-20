@@ -9,10 +9,13 @@ function App() {
 
   return (
     <Router>
-      <div>
+      <div className='app-container'>
         <SideBar />
-        <div>
+        <div className='main-section'>
           <Header />
+          <div className='main-content'>
+
+          </div>
         </div>
       </div>
     </Router>
