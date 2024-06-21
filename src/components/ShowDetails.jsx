@@ -3,7 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import EpisodePlayer from './EpisodePlayer';
 import { CiHeart } from "react-icons/ci";
 import { FaPlay } from "react-icons/fa";
-import Favourite from './Favourite';
+import Loading from './Loading';
 import "../Styles/showDetails.css"
 
 function ShowDetail() {
@@ -47,7 +47,7 @@ function ShowDetail() {
     };
 
     if (loading) {
-        return <div>Loading...</div>;
+        return <Loading />;
     }
 
     return (
