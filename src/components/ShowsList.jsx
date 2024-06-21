@@ -43,20 +43,30 @@ function ShowList() {
             <h1>All Shows</h1>
             <div className='category'>
                 {sortedShows.map(show => (
-                <div className='category-info' key={show.id}>
-                    <Link to={`/show/${show.id}`}>
-                    <div className='img-div'>
-                    <img src={show.image} alt={show.title} />
-                    </div>
-                        <p className='category-name'>{show.title}</p>
-                        <p>Genres: {show.genres.map(genre => genreMappings[genre]).join(', ')}</p>
-                        <p>Seasons: {show.seasons}</p>
+                    <Link to={`/show/${show.id}`} className='category-info' key={show.id}>
+                        <div>
+                            <div className="img-div">
+                                <img src={show.image} alt={show.title} />
+                            </div>
+                            <div className="card-information">
+                                <div className="main-info">
+                                    <div className="category-name">{show.title}</div>
+                                    <div className="description">Genres: {show.genres.map(genre => genreMappings[genre]).join(', ')}</div>
+                                    <div className="seasons-info">
+                                        <div className="season">
+                                            <div className="season-number">Seasons: {show.seasons}</div>
+                                        </div>
+                                        <div className="updated">Updated: {show.updated}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </Link>
-                </div>
                 ))}
             </div>
         </div>
-    )
+    );
 }
 
 export default ShowList
+
