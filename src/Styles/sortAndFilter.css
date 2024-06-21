@@ -17,7 +17,7 @@
     cursor: pointer;
   }
 
-  .sort-buttons buttton.selected  {
+  .sort-buttons button.selected  {
     color: #000;
     background-color: #b91da9;
     border-color: #b91da9;
