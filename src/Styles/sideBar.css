@@ -60,4 +60,26 @@
   .sidebar a:hover {
     color: white;
   }
+
+  /* Media query for smaller screens */
+@media (max-width: 768px) {
+    .side-bar {
+      width: 100%;
+      height: auto;
+      bottom: 0;
+      padding: 10px 0;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+  
+    .side-bar .logo {
+      display: none;
+    }
+  
+    .side-bar nav ul li {
+      margin: 0 10px; 
+      font-size: medium; 
+    }
+  }
   
