@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import SortButtons from './SortButtons';
 import genreMappings from '../genreMapping';
+import Loading from './Loading';
 import "../Styles/showList.css"
 
 function ShowList() {
@@ -31,7 +32,7 @@ function ShowList() {
     };
 
     if (loading) {
-        return <div>Loading...</div>;
+        return <Loading />;
     }
 
     return (
