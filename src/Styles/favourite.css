@@ -35,3 +35,17 @@
 .bottom-of-episode svg {
     cursor: pointer;
 }
+
+/* Media queries for tablets (up to 768px) */
+@media (max-width: 768px) {
+    .episode {
+        width: calc(50% - 20px); 
+    }
+}
+
+/* Media queries for small screen sizes (up to 480px) */
+@media (max-width: 480px) {
+    .episode {
+        width: calc(100% - 20px); 
+    }
+}
