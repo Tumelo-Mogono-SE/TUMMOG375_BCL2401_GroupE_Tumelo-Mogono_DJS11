@@ -19,18 +19,17 @@ function EpisodePlayer({ episode, images }) {
   return (
     <div className='episode-player'>
       <div className='episode-info'>
-        <img src={images} />
-        <h1>{episode.title}</h1>
+        <img src={images} className='episode-image'/>
+        <div className='episode-detail'>
+            <h1 className='episode-title'>{episode.title}</h1>
+        </div> 
       </div>
-      <audio controls src={episode.file} />
+      <div className='audio-controls'>
+        <audio controls src={episode.file} />
+      </div>
+      
     </div>
-    // <div>
-    //   <h1>{episode.title}</h1>
-    //   <p>{episode.description}</p>
-    //   <audio controls src={episode.audio} />
-    //   <button onClick={() => onPlay(episode.audio, episode.title)}>Play</button>
-    //   {/* <button onClick={handleFavorite}>{isFavorite ? 'Remove from Favorites' : 'Add to Favorites'}</button> */}
-    // </div>
+   
   );
 }
 
