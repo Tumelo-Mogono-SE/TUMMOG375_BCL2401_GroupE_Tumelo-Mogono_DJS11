@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { FaTrash } from 'react-icons/fa';
 import SortButtons from './SortButtons';
+import EpisodePlayer from './EpisodePlayer';
 import '../Styles/favourite.css';
 
 function Favourite() {
     const [favourites, setFavourites] = useState([]);
     const [selectedSort, setSelectedSort] = useState('AZ');
+    const [selectedEpisode, setSelectEpisode] = useState(null);
 
     useEffect(() => {
         const storedFavourites = localStorage.getItem('favourites');
@@ -28,6 +30,10 @@ function Favourite() {
         setSelectedSort(sortType);
     };
 
+    const handleEpisodeSelect = (episode) => {
+        setSelectEpisode(episode);
+    }
+
     return (
         <div className='favourites'>
             <div className='controls'>
@@ -45,11 +51,17 @@ function Favourite() {
                         <p>Show: {fav.show.title}, Season: {fav.season.season}</p>
                         <p>Added on: {new Date(fav.addedAt).toLocaleString()}</p>
                         <div className='bottom-of-episode'>
+                            <FaPlay onClick={() => handleEpisodeSelect(fav)}/>
                             <FaTrash onClick={() => handleRemoveFavourite(fav.episode.id)} />
                         </div>
                     </div>
                 ))}
             </div>
+            {selectedEpisode && (
+                <div className='episode-player'>
+                    <EpisodePlayer episode={selectedEpisode} images={selectedSeason.image}/>
+                </div>
+            )}
         </div>
     );
 }
