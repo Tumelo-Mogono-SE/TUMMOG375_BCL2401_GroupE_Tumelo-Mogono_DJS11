@@ -48,3 +48,84 @@
     width: 400px;
     opacity: none;
 }
+
+/* Media queries for tablets (up to 768px) */
+@media (max-width: 768px) {
+    .episode-player {
+        position: absolute; /* Change position to absolute */
+        bottom: 0;
+        left: 0;
+        width: auto; /* Adjust width */
+        height: auto; /* Adjust height */
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .episode-info {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .episode-image {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
+
+    .episode-details {
+        width: 100%;
+    }
+
+    .episode-title {
+        font-size: 1rem;
+    }
+
+    .audio-controls {
+        width: 100%;
+        justify-content: flex-start;
+        margin-top: 10px;
+    }
+
+    .audio-controls audio {
+        width: 100%;
+    }
+}
+
+/* Media queries for small screen sizes (up to 480px) */
+@media (max-width: 480px) {
+    .episode-player {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .episode-info {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .episode-image {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 10px;
+    }
+
+    .episode-details {
+        width: 100%;
+    }
+
+    .episode-title {
+        font-size: 0.9rem;
+    }
+
+    .audio-controls {
+        width: 100%;
+        justify-content: flex-start;
+        margin-top: 10px;
+    }
+
+    .audio-controls audio {
+        width: 100%;
+    }
+}
