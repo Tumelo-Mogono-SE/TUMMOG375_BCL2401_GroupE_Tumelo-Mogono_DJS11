@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { FaTrash } from 'react-icons/fa';
 import SortButtons from './SortButtons';
 import EpisodePlayer from './EpisodePlayer';
+import { FaPlay } from "react-icons/fa";
 import '../Styles/favourite.css';
 
 function Favourite() {
