@@ -8,8 +8,8 @@ In this project I worked on building a dynamic podcast app using React. In this 
 In this project I managed and manipulated several interconnected data entities such as the following: 
 * Show - Which represents an entire podcast series , which can consist of multiple seasons.
 * Season - Which is a collection of podcast episodes released within a specific timeframe.
-* Episode - Which is a infividual podcast episodes , each corresponding to an MP3 file for audio.
-* Preview - Which is a summarized version of a show containing a basic informatin section and used primarily for displaying lists.
+* Episode - Which is a individual podcast episodes , each corresponding to an MP3 file for audio.
+* Preview - Which is a summarized version of a show containing a basic information section and used primarily for displaying lists.
 * Genre - which is categories assigned to shows, which help users find content based on their interests.
 
 # Tech Stack
@@ -35,7 +35,7 @@ This web application provides a platform to browse and listen to a variety of po
 
 - The home page displays a list of all available podcasts sorted alphabetically from A to Z.
 - The home page contains sort button which can be utilized to sort from Z to A, on recently uploaded and oldest uploaded.
-- When clicking a show you get directed to show details which will contain the show details and a dropdown to select a season which when click will display all episodes of the specific seaason.
+- When clicking a show you get directed to show details which will contain the show details and a dropdown to select a season which when clicked will display all episodes of the specific seaason.
 - When an episode is selected an audio player will appear and only disappear if a new season is selected.
 - We can also add episode to favorites by clicking the heart icon.
 
@@ -44,7 +44,16 @@ This web application provides a platform to browse and listen to a variety of po
 * LinkedIn - https://www.linkedin.com/in/tumelo-mogono/
 * FaceBook - https://web.facebook.com/tumelo.mogono/?_rdc=1&_rdr
 * Whatsapp - +27785787760
+  
 # Area of mastery
+* Usage of React.js to create dynamic webapps's, where we can have a website/webapp which consists of one layout which the main content section can be changed based on buttons selected as components are utilized to manage changes to the main-content section.
+* I have a better understanding of the usage of Routes, Links and useParams which are essential in react, more specifically react router.
+* Learned to create a webapp which doesn't require multiple html pages for content and just requires components .
+* Most of my React.js project involves functional programming which is one of the most recommended styles of programming for react.js.
+* I learned how to utilize some libraries such as material ui, react, react-router-dom and react-icon.\
+* I managed to utilize localStorage across different components.
+* I managed to utilize the audio player for different use cases. The project I submitted, inside favorites the episode player doesn't work but after some work, I managed to make it work which I believe indicates problem-solving.
+* The usage of Routes and links for moving to specific sections of my webapp was helpfull in both ways. I now understand the usage of useParams, Links, Routes , Routes and custom css styles.
 
 # Project Process
 * After installing react, react router and react icon using npm, I then removed the boilerplate code.
